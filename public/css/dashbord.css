@@ -1,0 +1,147 @@
+body {
+	padding-top: 3.5rem;
+}
+
+h1 {
+	margin-bottom: 20px;
+	padding-bottom: 9px;
+}
+
+.sidebar {
+	position: fixed;
+	top: 51px;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	padding: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* Scrollable contents if viewport is shorter than content. */
+	border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.sidebar .nav {
+	margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+	width: 100%;
+}
+
+.sidebar .nav-item+.nav-item {
+	margin-left: 0;
+}
+
+.sidebar .nav-link {
+	border-radius: 0;
+}
+
+/* Placeholders */
+.placeholders {
+	padding-bottom: 3rem;
+}
+
+.placeholder img {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+/* DEMO - DASHBORD*/
+.offcanvas-nav .form-inline {
+	display: none
+}
+
+.is-hidden {
+	visibility: hidden;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.container {
+	overflow: hidden
+}
+
+.c-offcanvas-content-wrap {
+	-webkit-transform: none;
+	transform: none;
+}
+
+.c-offcanvas {
+	top: 3.5rem;
+}
+
+.c-offcanvas--top {
+	top: 0;
+	height: 16.5em;
+	-webkit-transform: translate3d(0, -16.5em, 0);
+	transform: translate3d(0, -16.5em, 0);
+	z-index: 1030;
+}
+
+.c-offcanvas-content-wrap {
+	-webkit-transform: none;
+	transform: none;
+	left: 0;
+	transition-property: left;
+}
+
+.c-offcanvas-content-wrap--push.c-offcanvas-content-wrap--left.is-open {
+	-webkit-transform: none;
+	transform: none;
+	left: 17em;
+}
+
+.has-offcanvas--visible.has-offcanvas--right .c-button--left,
+.has-offcanvas--visible.has-offcanvas--left .c-button--right {
+	opacity: 0.25;
+	pointer-events: none;
+}
